@@ -51,7 +51,6 @@ namespace CdkApp
                 FunctionName = "simpleLambda",
                 //Where to get the code
                 Code = Code.FromAsset("Lambdas\\src\\Lambdas\\bin\\Debug\\netcoreapp3.1"),
-                //Handler = "MyFunction2::MyFunction2.Function::FunctionHandler",
                 Handler = "Lambdas::Lambdas.Function::SimpleLambdaHandler",
                 Environment = new Dictionary<string, string>
                 {
@@ -69,7 +68,6 @@ namespace CdkApp
                 FunctionName = "s3Lambda",
                 //Where to get the code
                 Code = Code.FromAsset("Lambdas\\src\\Lambdas\\bin\\Debug\\netcoreapp3.1"),
-                //Handler = "MyFunction2::MyFunction2.Function::FunctionHandler",
                 Handler = "Lambdas::Lambdas.Function::S3LambdaHandler",
                 Environment = new Dictionary<string, string>
                 {
@@ -88,7 +86,6 @@ namespace CdkApp
                 Timeout = Duration.Seconds(20),
                 //Where to get the code
                 Code = Code.FromAsset("Lambdas\\src\\Lambdas\\bin\\Debug\\netcoreapp3.1"),
-                //Handler = "MyFunction2::MyFunction2.Function::FunctionHandler",
                 Handler = "Lambdas::Lambdas.Function::WriteDynamoDBLambdaHandler",
                 Environment = new Dictionary<string, string>
                 {
@@ -108,7 +105,6 @@ namespace CdkApp
                 Timeout = Duration.Seconds(20),
                 //Where to get the code
                 Code = Code.FromAsset("Lambdas\\src\\Lambdas\\bin\\Debug\\netcoreapp3.1"),
-                //Handler = "MyFunction2::MyFunction2.Function::FunctionHandler",
                 Handler = "Lambdas::Lambdas.Function::ReadDynamoDBLambdaHandler",
                 Environment = new Dictionary<string, string>
                 {
